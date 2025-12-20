@@ -1,0 +1,4 @@
+Get-ChildItem -Recurse -Filter *.dart | ForEach-Object { 
+    "`n" + "="*80 + "`n" + "ФАЙЛ: " + $_.FullName + "`n" + "="*80 + "`n"
+    Get-Content $_.FullName 
+} | Out-File -FilePath all_code.txt -Encoding UTF8

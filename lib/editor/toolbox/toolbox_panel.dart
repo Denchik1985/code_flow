@@ -7,7 +7,6 @@ class ToolboxPanel extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        // Заголовок
         Container(
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
@@ -24,8 +23,6 @@ class ToolboxPanel extends StatelessWidget {
             ],
           ),
         ),
-
-        // Список компонентов
         Expanded(
           child: ListView(
             padding: const EdgeInsets.all(12),
@@ -59,7 +56,7 @@ class ToolboxPanel extends StatelessWidget {
           borderRadius: BorderRadius.circular(8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.1),
+              color: const Color.fromRGBO(0, 0, 0, 0.1),
               blurRadius: 6,
             ),
           ],
